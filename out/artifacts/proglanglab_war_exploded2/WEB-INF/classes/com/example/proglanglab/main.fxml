@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="469.0" prefWidth="653.0" style="-fx-background-color: #106165;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proglanglab.fxControllers.MainF">
+   <children>
+      <MenuBar layoutX="139.0" layoutY="19.0" prefHeight="25.0" prefWidth="82.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Menu">
+            <items>
+              <MenuItem fx:id="mangaItem" mnemonicParsing="false" onAction="#showTab" text="MANGA" />
+                  <MenuItem fx:id="ranobeitem" mnemonicParsing="false" onAction="#showtab1" text="RANOBE" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="SAbut" layoutX="511.0" layoutY="19.0" mnemonicParsing="false" onAction="#openSApage" text="View Shop Assistants" />
+      <TableView fx:id="mangaTab" editable="true" layoutX="69.0" layoutY="76.0" prefHeight="166.0" prefWidth="555.0">
+        <columns>
+            <TableColumn fx:id="idAtt" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="NameAtt" prefWidth="87.99999713897705" text="manga" />
+            <TableColumn fx:id="authorAtt" prefWidth="86.66669464111328" text="author" />
+            <TableColumn fx:id="dateAtt" prefWidth="69.99998474121094" text="release" />
+          <TableColumn fx:id="priceAtt" text="price" />
+            <TableColumn fx:id="adaptationAtt" prefWidth="75.0" text="adaptation" />
+            <TableColumn fx:id="deleteFM" prefWidth="64.0" text="delete" />
+        </columns>
+      </TableView>
+      <TableView fx:id="ranobeTab" layoutX="47.0" layoutY="285.0" prefHeight="159.0" prefWidth="603.0">
+        <columns>
+            <TableColumn fx:id="idt" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="ranobet" prefWidth="75.0" text="ranobe" />
+          <TableColumn fx:id="authort" prefWidth="75.0" text="author" />
+            <TableColumn fx:id="relt" prefWidth="75.0" text="release" />
+            <TableColumn fx:id="pricet" prefWidth="75.0" text="price" />
+            <TableColumn fx:id="partst" prefWidth="75.0" text="parts" />
+            <TableColumn fx:id="languagest" prefWidth="75.0" text="language" />
+            <TableColumn fx:id="deleteFR" prefWidth="75.0" text="delete" />
+        </columns>
+      </TableView>
+      <Button fx:id="addProduct" layoutX="232.0" layoutY="19.0" mnemonicParsing="false" onAction="#addnewit" prefHeight="25.0" prefWidth="155.0" text="Add ***Ranobe/Manga***" />
+      <Button fx:id="showordersf" layoutX="7.0" layoutY="19.0" mnemonicParsing="false" onAction="#showordersf" text="Add or Search order" />
+      <Button fx:id="showallorderdf" layoutX="401.0" layoutY="19.0" mnemonicParsing="false" onAction="#showallordersf" text="Show All Orders" />
+   </children>
+</AnchorPane>

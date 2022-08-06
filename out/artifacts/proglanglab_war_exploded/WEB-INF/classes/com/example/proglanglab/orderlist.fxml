@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proglanglab.fxControllers.Orderlist">
+   <children>
+      <ListView fx:id="myOrders" layoutX="203.0" layoutY="31.0" prefHeight="277.0" prefWidth="371.0" />
+      <Label fx:id="prodlabel" layoutX="206.0" layoutY="5.0" text="Product" />
+      <Label layoutX="262.0" layoutY="5.0" prefHeight="17.0" prefWidth="0.0" />
+      <Button fx:id="gotomenu" layoutX="487.0" layoutY="356.0" mnemonicParsing="false" onAction="#gotomenu" text="Go to menu" />
+      <Button layoutX="18.0" layoutY="282.0" mnemonicParsing="false" onAction="#showOrders" text="Show" />
+      <TextField fx:id="orderID" layoutX="14.0" layoutY="243.0" promptText="order id" />
+      <Button layoutX="22.0" layoutY="174.0" mnemonicParsing="false" onAction="#addNew" text="Add" />
+      <TextField fx:id="manganameforNew" layoutX="22.0" layoutY="142.0" promptText="product id" />
+      <TextField fx:id="orderIDfornew" layoutX="22.0" layoutY="100.0" promptText="order" />
+      <Button layoutX="41.0" layoutY="22.0" mnemonicParsing="false" onAction="#createOrder" prefHeight="17.0" prefWidth="149.0" text="CREATE ORDER" />
+      <Label layoutX="19.0" layoutY="82.0" text="Order id" />
+      <Label layoutX="20.0" layoutY="125.0" text="Product" />
+      <Label layoutX="26.0" layoutY="58.0" text="ADD PRODUCT TO ORDER" textFill="#ce0606" />
+      <Label layoutX="20.0" layoutY="219.0" text="SHOW ORDERED PRODUCTS" textFill="#ce0606" />
+      <Label fx:id="namelabel" layoutX="262.0" layoutY="5.0" text="Name" />
+      <Label fx:id="authorlabel" layoutX="319.0" layoutY="5.0" text="Author" />
+      <Label fx:id="pricelabel" layoutX="378.0" layoutY="5.0" text="Price" />
+      <Button layoutX="472.0" layoutY="318.0" mnemonicParsing="false" onAction="#showAllOrders" text="ShowAllOrders" />
+      <Button layoutX="72.0" layoutY="282.0" mnemonicParsing="false" onAction="#deleteOrder" text="Delete" />
+      <MenuButton layoutX="137.0" layoutY="282.0" mnemonicParsing="false" text="Edit">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#deleteProductFromOrder" text="Delete product" />
+          <MenuItem mnemonicParsing="false" onAction="#Editdate" text="Edit Date" />
+        </items>
+      </MenuButton>
+      <Label fx:id="prodidLabel" layoutX="52.0" layoutY="333.0" text="productID" />
+      <TextField fx:id="enterforEdit" layoutX="14.0" layoutY="354.0" />
+      <Label fx:id="DateLabel" layoutX="52.0" layoutY="333.0" text="New date" />
+      <Label fx:id="formatLabel" layoutX="176.0" layoutY="358.0" text="yyyy-mm-dd" />
+   </children>
+</AnchorPane>

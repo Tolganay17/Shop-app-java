@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proglanglab.HelloController">
+   <children>
+      <Button fx:id="but1" layoutX="274.0" layoutY="258.0" mnemonicParsing="false" onAction="#writesmth" text="Sign in" />
+      <TextField layoutX="234.0" layoutY="149.0" promptText="Usernane" />
+      <TextField layoutX="234.0" layoutY="208.0" promptText="Password" />
+   </children>
+</AnchorPane>
